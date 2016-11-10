@@ -47,28 +47,46 @@ public class LuetBox extends Fragment {
                     popup.update(50, 50, 100, 100);
                     ImageView image = (ImageView) popup.getContentView().findViewById(R.id.luetPic);
                     int num = (int) Math.random() * (7 - 1) + 1;
-                    int id = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic3", null, null);
+                    int id = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic1", null, null);
                     TextView txt = (TextView) popup.getContentView().findViewById(R.id.textpop);
                     txt.setText("hello");
                     image.setImageResource(id);
                     switch (num) {
 
                         case 1:
-                            int id3 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic3", null, null);
+                            int id1 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic1", null, null);
+                            txt.setText("hi");
+                            image.setImageResource(id1);
                             break;
-
                         case 2:
+                            int id2 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic2", null, null);
+                            txt.setText("hello");
+                            image.setImageResource(id2);
                             break;
                         case 3:
-
+                            int id3 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic3", null, null);
+                            txt.setText("hola");
+                            image.setImageResource(id3);
                             break;
                         case 4:
+                            int id4 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic4", null, null);
+                            txt.setText("how are you?");
+                            image.setImageResource(id4);
                             break;
                         case 5:
+                            int id5 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic1", null, null);
+                            txt.setText("como estas");
+                            image.setImageResource(id5);
                             break;
                         case 6:
+                            int id6 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic1", null, null);
+                            txt.setText("new style");
+                            image.setImageResource(id6);
                             break;
                         case 7:
+                            int id7 = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic1", null, null);
+                            txt.setText("hi");
+                            image.setImageResource(id7);
                             break;
 
                     }

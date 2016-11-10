@@ -45,7 +45,7 @@ public class LuetBox extends Fragment {
                     clicked = false;
                     popup.showAtLocation(mainlayout, Gravity.CENTER, 20, 20);
                     popup.update(50, 50, 100, 100);
-                    ImageView image = (ImageView) popup.getContentView().findViewById(R.id.luetPic);
+                    ImageView image = (ImageView) getActivity().findViewById(R.id.luetPic);//findViewById(R.id.luetPic);
                     int num = (int) Math.random() * (7 - 1) + 1;
                     int id = getResources().getIdentifier("matchwear.com.matchwearapp:/drawable/" + "pic1", null, null);
                     TextView txt = (TextView) popup.getContentView().findViewById(R.id.textpop);

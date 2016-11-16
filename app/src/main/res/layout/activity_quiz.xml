@@ -20,6 +20,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="name"
+        android:inputType="textCapWords"
         android:layout_below="@+id/textname"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="when were you born?"
+        android:textSize="17dp"
+        android:layout_below="@+id/name"
+        android:id="@+id/textbirthday"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="date"
+        android:inputType="date"
+        android:layout_below="@+id/textbirthday"
+        android:layout_marginTop="10dp"
+        android:id="@+id/birthday"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="what is your email?"
+        android:textSize="17dp"
+        android:layout_below="@+id/birthday"
+        android:id="@+id/textemail"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/textemail"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"/>
+
 </RelativeLayout>

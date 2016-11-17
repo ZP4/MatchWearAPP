@@ -61,7 +61,6 @@
         android:textSize="17dp"
         android:layout_below="@+id/email"
         android:id="@+id/textgender"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,49 +69,29 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:id="@+id/submit"/>
-
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/genderchoice1"
+        android:layout_below="@+id/textgender"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="18dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/malebubble"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/femalebubble"/>
+    </RadioGroup>
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textgender"
-        android:id="@+id/malebubble"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/malebubble"
-        android:layout_toRightOf="@+id/malebubble"
-        android:layout_below="@+id/textgender"
-        android:textSize="16dp"
-        android:padding="7dp"
-        android:text="Male"
-        android:id="@+id/genderchoice1"/>
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textgender"
-        android:layout_toEndOf="@+id/genderchoice1"
-        android:layout_toRightOf="@+id/genderchoice1"
-        android:id="@+id/femalebubble"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/femalebubble"
-        android:layout_toRightOf="@+id/femalebubble"
-        android:layout_below="@+id/textgender"
-        android:textSize="16dp"
-        android:padding="7dp"
-        android:text="Female"
-        android:id="@+id/genderchoice2"/>
+
+
 
 
 

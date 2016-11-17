@@ -30,7 +30,7 @@ public class QuizActivity extends AppCompatActivity {
                 String email = mail.toString();
                 Boolean ismale = maleb.isChecked();
                 Boolean isfemale = femaleb.isChecked();
-                
+
 
 
 

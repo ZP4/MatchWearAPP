@@ -33,19 +33,12 @@ public class ShoppingCart extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_shopping_cart, container, false);
 
-                ListView listView = (ListView) view.findViewById(R.id.ShoppingList);
+        ListView listView = (ListView) view.findViewById(R.id.ShoppingList);
+
         String items [] = {"item1", "item2", "item3"};
         List<String> output = new ArrayList<String>();
         output.add("hello");
-        listView.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_list_item_1, output));
-
-
-
-
-
-
-
-
+        listView.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_list_item_1, items));
 
         return view;
     }

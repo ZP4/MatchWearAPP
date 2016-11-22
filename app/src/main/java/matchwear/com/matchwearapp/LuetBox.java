@@ -40,6 +40,8 @@ public class LuetBox extends Fragment {
 
         final PopupWindow popup = new PopupWindow(getActivity());
         Button LuetButton = (Button) view.findViewById(R.id.mButton);//referencing from fragment_luet_box
+        final Button closepop   = (Button) view.findViewById(R.id.exitpopup);
+
         final LinearLayout mainlayout = new LinearLayout(getActivity());
         final View popupview = inflater.inflate(R.layout.luet_popup, null, false);
         popup.setContentView(popupview);
@@ -104,21 +106,20 @@ public class LuetBox extends Fragment {
                             txt.setText("7");
                             image.setImageResource(id7);
                             break;
-
                     }
+                    closepop.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            popup.dismiss();
+                        }
+                    });
                 }
                 else{
                     clicked=true;
                     popup.dismiss();
                 }
-
-
             }
         });
-
-
         return view;
-
     }
-
 }

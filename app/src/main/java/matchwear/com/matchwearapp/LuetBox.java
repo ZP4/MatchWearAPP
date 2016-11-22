@@ -105,7 +105,7 @@ public class LuetBox extends Fragment {
                        image.setImageResource(id7);
                        break;
                }
-                Button close = (Button) getView().findViewById(R.id.exitpopup);
+                Button close = (Button) popupview.findViewById(R.id.exitpopup);
                 close.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

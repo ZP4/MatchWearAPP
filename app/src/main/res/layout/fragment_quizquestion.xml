@@ -22,34 +22,35 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/chioce1"
-            android:drawableRight="@drawable/ic_pic1" />
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_pic2"
-           />
+            android:id="@+id/chioce1" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/chioce2"
-            android:drawableRight="@drawable/ic_pic2" />
+            android:id="@+id/chioce2" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/chioce3"
-            android:drawableRight="@drawable/ic_pic1" />
+            android:id="@+id/chioce3" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/chioce4"
-            android:drawableRight="@drawable/ic_pic1" />
+            android:id="@+id/chioce4" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/chioce5"
-            android:drawableRight="@drawable/ic_pic1" />
+            android:id="@+id/chioce5" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chioce6" />
     </RadioGroup>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:id="@+id/next"/>
 
 </RelativeLayout>

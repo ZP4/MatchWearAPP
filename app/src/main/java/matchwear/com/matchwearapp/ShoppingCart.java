@@ -3,6 +3,7 @@ package matchwear.com.matchwearapp;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.renderscript.ScriptIntrinsicYuvToRGB;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.ListView;
 import android.app.ListActivity;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -32,14 +34,14 @@ public class ShoppingCart extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_shopping_cart, container, false);
-
         ListView listView = (ListView) view.findViewById(R.id.ShoppingList);
+        List<String> things  = new ArrayList<String>();
+        things.add("hello");
+        things.add("hi");
 
-        String items [] = {"item1", "item2", "item3"};
-        List<String> output = new ArrayList<String>();
-        output.add("hello");
-        listView.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_list_item_1, items));
 
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,things);
+        listView.setAdapter(arrayAdapter);
         return view;
     }
 

@@ -50,15 +50,14 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         setContentView(R.layout.activity_main);
 
 
-
                //TAB tab         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         TabLayout tabLayout =(TabLayout) findViewById(R.id.sliding_tabs);
-        tabLayout.addTab(tabLayout.newTab().setText("Gallery"));
-        tabLayout.addTab(tabLayout.newTab().setText("Shopping Cart"));
-        tabLayout.addTab(tabLayout.newTab().setText("Loot Box"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Gallery"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Shopping Cart"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Loot Box"));
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
@@ -159,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                 case 1:
                     return new ShoppingCart();
                 case 2:
-                    return new LuetBox();
+                    return new Shop();
 
 
 
@@ -178,12 +177,11 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-
-                 return  "gallery";
+                    return "Lookbook";
                 case 1:
-                    return "Shopping cart";
+                    return "Cart";
                 case 2:
-                    return "box";
+                    return "Shop";
             }
             return null;
         }

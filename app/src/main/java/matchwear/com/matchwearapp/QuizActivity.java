@@ -8,6 +8,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+import java.util.HashMap;
+
 public class QuizActivity extends AppCompatActivity {
 
     @Override

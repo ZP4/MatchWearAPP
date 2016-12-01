@@ -27,6 +27,8 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity implements ActionBar.TabListener{
 
     /**
@@ -48,9 +50,11 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-               //TAB tab         // Create the adapter that will return a fragment for each of the three
+        Clothes c = new Clothes();
+        System.out.println("hello" + c.male);
+        HashMap<String, String> hey = c.male.get("pants");
+        System.out.println( hey.get("size"));
+        // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());

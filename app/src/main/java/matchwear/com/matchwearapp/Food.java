@@ -33,12 +33,23 @@ public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
         NECCS.put("ID", "USA03");
         HashMap<String,HashMap>AE       = new HashMap<String, HashMap>();
         HashMap<String, String>SM       = new HashMap<String, String>();
-        SM.put("Title","Sliced Meatloaf");
+        SM.put("Title", "Sliced Meatloaf");
         SM.put("Description", "Juicy carved meat loaf slices with a pour over tomato sauce");
         SM.put("Price", "$39.99");
         SM.put("Servings", "2-3 slices per person");
         SM.put("ID", "USE01");
-        
+        HashMap<String, String>CDRC     = new HashMap<String, String>();
+        CDRC.put("Title", "Carved Double Roasted Chicken");
+        CDRC.put("Description", "Carved roasted chicken marinated in rosemary and garlic  served with mushrooms and carrots");
+        CDRC.put("Price", "$34.99");
+        CDRC.put("Servings", "Whole chicken- precut");
+        CDRC.put("ID", "USE02");
+        HashMap<String, String>PCT      = new HashMap<String, String>();
+        PCT.put("Title", "Paremsan Crusted Ttilapia");
+        PCT.put("Description", "Garlic seasoned tilapia baked with shredded parmesan ");
+        PCT.put("Price", "$34.99");
+        PCT.put("Servings", "15 pieces");
+        PCT.put("ID", "USE03");
 
 
 
@@ -52,6 +63,8 @@ public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
         AA.put("New England Clam Chowder Soup",NECCS);
         American.put("Appitizer", AA);
         AE.put("Sliced Meatloaf", SM);
+        AE.put("Carved Double Roasted Chicken", CDRC);
+        AE.put("Paremsan Crusted Ttilapia", PCT);
         American.put("Entrees", AE);
 
     }

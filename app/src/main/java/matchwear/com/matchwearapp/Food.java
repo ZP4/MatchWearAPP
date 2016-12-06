@@ -2,6 +2,7 @@ package matchwear.com.matchwearapp;
 
 import java.net.FileNameMap;
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * Created by ZP4 on 12/2/2016.
@@ -9,8 +10,7 @@ import java.util.HashMap;
 
 public class Food {
 public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
-
-
+public HashMap<String, HashMap> Brooklyn= new HashMap<String, HashMap>();
     public Food() {
         HashMap<String, HashMap> AA     = new HashMap<String, HashMap>();
         HashMap<String, String>FMNCB    = new HashMap<String,String>();
@@ -90,12 +90,6 @@ public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
         RVC.put("ID", "USD03");
 
 
-
-
-
-
-
-
         AA.put("Fred Mac N Cheese Balls", FMNCB);
         AA.put("Philly Cheeseteak Sliders",PCS);
         AA.put("New England Clam Chowder Soup",NECCS);
@@ -112,6 +106,106 @@ public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
         AD.put("Ice Cream", IC);
         AD.put("Red Velvet Cupcakes", RVC);
         American.put("Desserts", AD);
+
+        HashMap<String, HashMap>BA      = new HashMap<String, HashMap>();
+        HashMap<String, String>BP       = new HashMap<String, String>();
+        BP.put("Title", "Bagel Pops");
+        BP.put("Description", "Small bagel bites filled with cream cheese, and served on a stick");
+        BP.put("Price", "$29.99");
+        BP.put("Servings", "20 pieces");
+        BP.put("ID", "BKA01");
+        HashMap<String, String>CIHD     = new HashMap<String, String>();
+        CIHD.put("Title", "Coney Island Hot Dog");
+        CIHD.put("Description", "Iconic Coney Island hotdogs, topped with relish, deli mustard, chili and ketchup");
+        CIHD.put("Price", "$29.99");
+        CIHD.put("Servings", "10 pieces");
+        CIHD.put("ID", "BKA02");
+        HashMap<String, String>HW       = new HashMap<String, String>();
+        HW.put("Title", "Hot Wings");
+        HW.put("Description", "Cripsy boneless wings slathered in a flavor of your chocie and served with blue cheese");
+        HW.put("Price", "$39.99");
+        HW.put("Servings", "20 pieces");
+        HW.put("ID", "BKA03");
+        HashMap<String, HashMap>BE      = new HashMap<String, HashMap>();
+        HashMap<String, String>BKB      = new HashMap<String, String>();
+        BKB.put("Title", "BK Burger");
+        BKB.put("Description", "Half pound beef burger with hot pastrami and melted swiss cheese, served with steak fries");
+        BKB.put("Price", "$59.99");
+        BKB.put("Servings", "10 pieces");
+        BKB.put("ID", "BKE01");
+        HashMap<String, String>PP       = new HashMap<String, String>();
+        PP.put("Title", "Pulled Pork");
+        PP.put("Description", "juicy pork is cooked carefully at low temperatures, steadily tenderizing the meat as it is seasoned carefully");
+        PP.put("Price", "$49.99");
+        PP.put("Servings", "15 pieces");
+        PP.put("ID", "BKE02");
+        HashMap<String, String>P        = new HashMap<String, String>();
+        P.put("Title", "Pizza");
+        P.put("Description", " A staple that consists of baked dough and marinara sauce, topped with melted mozzeralla");
+        P.put("Price", "$59.99");
+        P.put("Servings", "3 pies");
+        P.put("ID", "BKE03");
+        HashMap<String, HashMap>BSD     = new HashMap<String, HashMap>();
+        HashMap<String, String>BWC      = new HashMap<String, String>();
+        BWC.put("Title", "Bacon-Wrapped Crab");
+        BWC.put("Description", "Juicy strips of crab wrapped with thin cut bacon");
+        BWC.put("Price", "$39.99");
+        BWC.put("Servings", "20 pieces");
+        BWC.put("ID", "BKS01");
+        HashMap<String, String>FC       = new HashMap<String, String>();
+        FC.put("Title", "Fried Calamari");
+        FC.put("Description", "Lightly fried Squid with a fresh marinara sauce");
+        FC.put("Price", "$39.99");
+        FC.put("Servings", "1 large tray");
+        FC.put("ID", "BKS02");
+        HashMap<String, String>MS       = new HashMap<String, String>();
+        MS.put("Title", "Mozzarella Sticks");
+        MS.put("Description", "Mozzarella sticks covered in bread crumbs and fried till golden brown");
+        MS.put("Price", "$39.99");
+        MS.put("Servings", "1 tray");
+        MS.put("ID", "BKS03");
+        HashMap<String, HashMap>BD      = new HashMap<String, HashMap>();
+        HashMap<String, String>NYC      = new HashMap<String, String>();
+        NYC.put("Title", "New York Cheesecake");
+        NYC.put("Description", "Iconic New York Cheesecake");
+        NYC.put("Price", "$49.99");
+        NYC.put("Servings", "1 tray");
+        NYC.put("ID", "BKD01");
+        HashMap<String, String >IBC     = new HashMap<String, String>();
+        IBC.put("Title", "Italian Bakery Canolis");
+        IBC.put("Description", "Crisp, yet soft, cannoli shells filled with fresh cream");
+        IBC.put("Price", "$59.99");
+        IBC.put("Servings", "1 tray");
+        IBC.put("ID", "BKD02");
+        HashMap<String, String>CC       = new HashMap<String, String>();
+        CC.put("Title", "Cotton Candy");
+        CC.put("Description", "A light, very sweet candy of threaded sugar, often tinted with food coloring and twirled onto a stick");
+        CC.put("Price", "$19.99");
+        CC.put("Servings", "10 bags");
+        CC.put("ID", "BKD03");
+
+
+
+        BA.put("Bagel Pops", BP);
+        BA.put("Coney Island Hot Dog", CIHD);
+        BA.put("Hot Wings", HW);
+        Brooklyn.put("Appitizer", BA);
+        BE.put("BK Burger", BKB);
+        BE.put("Pulled Pork", PP);
+        BE.put("Pizza", P);
+        Brooklyn.put("Entrees", BE);
+        BSD.put("Bacon-Wrapped Crab",BWC);
+        BSD.put("Fried Calamari", FC);
+        BSD.put("Mozzarella Sticks", MS);
+        Brooklyn.put("Side Dish",BSD);
+        BD.put("New York Cheesecake",NYC);
+        BD.put("Italian Bakery Canolis",IBC);
+        BD.put("Cotton Candy",CC);
+        Brooklyn.put("Desserts", BD);
+
+
+
+
 
     }
 }

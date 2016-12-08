@@ -13,7 +13,9 @@ public class Food {
     public HashMap<String, HashMap> Brooklyn= new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Southern_Comfort= new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Hispanic= new HashMap<String, HashMap>();
-public HashMap<String, HashMap>Carribean = new HashMap<String ,HashMap>();
+    public HashMap<String, HashMap>Carribean = new HashMap<String ,HashMap>();
+    public HashMap<String, HashMap> Europe  = new HashMap<String, HashMap>();
+
     public Food() {
         HashMap<String, HashMap> AA     = new HashMap<String, HashMap>();
         HashMap<String, String>FMNCB    = new HashMap<String,String>();
@@ -321,9 +323,81 @@ public HashMap<String, HashMap>Carribean = new HashMap<String ,HashMap>();
         S.put("Servings", "1 large bowl");
         S.put("ID","HPA03");
         HashMap<String, HashMap>HE   = new HashMap<String, HashMap>();
+        HashMap<String, String>CM      = new HashMap<String, String>();
+        CM.put("Title", "Chicken Mofongo");
+        CM.put("Description", "Mashed plantains rounded into a bowl with seasoned chicken and vegetables inside");
+        CM.put("Price", "$89.99");
+        CM.put("Servings", "10 pieces");
+        CM.put("ID","HPE01");
+        HashMap<String, String>BCa      = new HashMap<String, String>();
+        BCa.put("Title", "Beef Carnitas");
+        BCa.put("Description", "Braised marinated steak in flour tortilla with cilantro and lime served with avocado  slices ");
+        BCa.put("Price", "$89.99");
+        BCa.put("Servings", "10 pieces");
+        BCa.put("ID","HPE02");
+        HashMap<String, String>SP      = new HashMap<String, String>();
+        SP.put("Title", "Seafood Paella");
+        SP.put("Description", "Rice cooked with shrimp, muscles, calamari and lobster pieces");
+        SP.put("Price", "$89.99");
+        SP.put("Servings", "1 tray");
+        SP.put("ID","HPE03");
+        HashMap<String , HashMap>HSD    = new HashMap<String, HashMap>();
+        HashMap<String, String>ACG      = new HashMap<String, String>();
+        ACG.put("Title", "Arroz con Gandules");
+        ACG.put("Description", "Rice, pigeon peas and pork chunks, cooked with sofrito seasoning");
+        ACG.put("Price", "$49.99 ");
+        ACG.put("Servings", "1 tray");
+        ACG.put("ID","HPS01");
+        HashMap<String, String>Sa      = new HashMap<String, String>();
+        Sa.put("Title", "Samosas");
+        Sa.put("Description", "Fried dough stuffed with potatoes, peas, squash, and cauliflower served with mint chutney sauce");
+        Sa.put("Price", "$34.99 ");
+        Sa.put("Servings", "20 pieces");
+        Sa.put("ID","HPS02");
+        HashMap<String, String>Ba      = new HashMap<String, String>();
+        Ba.put("Title", "Bacalaitos");
+        Ba.put("Description", "Salted codfish pancake fritters");
+        Ba.put("Price", "$39.99 ");
+        Ba.put("Servings", "30 pieces");
+        Ba.put("ID","HPS03");
+        HashMap<String, HashMap>HD      = new HashMap<String, HashMap>();;
+        HashMap<String, String>TL      = new HashMap<String, String>();
+        TL.put("Title", "Tres Leche");
+        TL.put("Description", "Sponge cake soaked in evaporated milk, condensed milk, and heavy cream");
+        TL.put("Price", "$34.99 ");
+        TL.put("Servings", "1 tray");
+        TL.put("ID","HPD01");
+        HashMap<String, String>C      = new HashMap<String, String>();
+        C.put("Title", "Churros");
+        C.put("Description", "Mini fried dough pastry sprinkled with cinnamon sugar");
+        C.put("Price", "$19.99 ");
+        C.put("Servings", "20 pieces");
+        C.put("ID","HPD02");
+        HashMap<String, String>SO      = new HashMap<String, String>();
+        SO.put("Title", "Sopaipillas");
+        SO.put("Description", "Light pastry puffs served with honey");
+        SO.put("Price", "$29.99 ");
+        SO.put("Servings", "20 pieces");
+        SO.put("ID","HPD03");
+
+        HA.put("Vegan Tostones",VT);
+        HA.put("Sorullitos de Maiz",SDM);
+        HA.put("Sancocho",S);
+        Hispanic.put("Appitizer", HA);
+        HE.put("Chicken Mofongo",CM);
+        HE.put("Beef Carnitas",BCa);
+        HE.put("Seafood Paella",SP);
+        Hispanic.put("Entrees", HE);
+        HSD.put("Arroz con Gandules",ACG);
+        HSD.put("Samosas",Sa);
+        HSD.put("Bacalaitos",Ba);
+        Hispanic.put("Side Dish",HSD);
+        HD.put("Tres Leche",TL);
+        HD.put("Churros", C);
+        HD.put("Sopaipillas", SO);
 
 
-        HashMap<String, HashMap>APp      = new HashMap<String, HashMap>();
+        HashMap<String, HashMap>APp   = new HashMap<String, HashMap>();
         HashMap<String, String>  BP1  = new HashMap<String, String>();
         BP1.put("Title", "Beef Patties");
         BP1.put("Description", "Meat patties filled with curried ground beef, onion, garlic, and Scotch bonnet pepper, plus a slew of aromatic herbs and spices");
@@ -331,6 +405,38 @@ public HashMap<String, HashMap>Carribean = new HashMap<String ,HashMap>();
         BP1.put("Servings", "20 patties");
         BP1.put("ID","CBA01");
         APp.put("Beef Patties", BP1);
+
+        HashMap<String, HashMap>EA  = new HashMap<String, HashMap>();
+        HashMap<String, String>MPRB      = new HashMap<String, String>();
+        MPRB.put("Title", "Mini Prosciutto Rice Balls");
+        MPRB.put("Description", "Deep fried rice croquettes filled with prosciutto, provolone, and seasoned rice ");
+        MPRB.put("Price", "$29.99 ");
+        MPRB.put("Servings", "20 pieces");
+        MPRB.put("ID","EUA01");
+        HashMap<String, String>VSEC      = new HashMap<String, String>();
+        VSEC.put("Title", "Vegan Spicy Eggplant Capanota");
+        VSEC.put("Description", "Cooked vegetable salad with sauteed diced eggplant, tomatoes, and sweet white onions");
+        VSEC.put("Price", "$34.99 ");
+        VSEC.put("Servings", "1 tray");
+        VSEC.put("ID","EUA02");
+        HashMap<String, String>CG      = new HashMap<String, String>();
+        CG.put("Title", "Cheddar Gougeres ");
+        CG.put("Description", "A baked savory choux pastry mixed with cheese.");
+        CG.put("Price", "$24.99 ");
+        CG.put("Servings", "20 pieces");
+        CG.put("ID","EUA03");
+        HashMap<String, String>PCA      = new HashMap<String, String>();
+        PCA.put("Title", "Prawn Canapes");
+        PCA.put("Description", "bite-sized shrimp grilled to a crispy golden brown");
+        PCA.put("Price", "$34.99 ");
+        PCA.put("Servings", "20 pieces");
+        PCA.put("ID","EUA04");
+        HashMap<String, String>PL     = new HashMap<String, String>();
+        PL.put("Title", "Potato Latkes");
+        PL.put("Description", "A potato pancake seasoned with breadcrumbs, garlic and marjoram");
+        PL.put("Price", "$29.99 ");
+        PL.put("Servings", "20 pieces");
+        PL.put("ID","EUA05");
 
         /*
         HashMap<String, String>      = new HashMap<String, String>();
@@ -340,9 +446,6 @@ public HashMap<String, HashMap>Carribean = new HashMap<String ,HashMap>();
         .put("Servings", "");
         .put("ID","");
          */
-        HA.put("Vegan Tostones",VT);
-        HA.put("Sorullitos de Maiz",SDM);
-        HA.put("Sancocho",S);
-        Hispanic.put()
+
     }
 }

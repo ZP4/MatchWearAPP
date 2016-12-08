@@ -13,6 +13,7 @@ public class Food {
     public HashMap<String, HashMap> Brooklyn= new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Southern_Comfort= new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Hispanic= new HashMap<String, HashMap>();
+public HashMap<String, HashMap>Carribean = new HashMap<String ,HashMap>();
     public Food() {
         HashMap<String, HashMap> AA     = new HashMap<String, HashMap>();
         HashMap<String, String>FMNCB    = new HashMap<String,String>();
@@ -185,7 +186,7 @@ public class Food {
         CC.put("Price", "$19.99");
         CC.put("Servings", "10 bags");
         CC.put("ID", "BKD03");
-
+        
 
 
         BA.put("Bagel Pops", BP);
@@ -321,6 +322,15 @@ public class Food {
         S.put("ID","HPA03");
         HashMap<String, HashMap>HE   = new HashMap<String, HashMap>();
 
+
+        HashMap<String, HashMap>APp      = new HashMap<String, HashMap>();
+        HashMap<String, String>  BP1  = new HashMap<String, String>();
+        BP1.put("Title", "Beef Patties");
+        BP1.put("Description", "Meat patties filled with curried ground beef, onion, garlic, and Scotch bonnet pepper, plus a slew of aromatic herbs and spices");
+        BP1.put("Price", "$29.99 ");
+        BP1.put("Servings", "20 patties");
+        BP1.put("ID","CBA01");
+        APp.put("Beef Patties", BP1);
 
         /*
         HashMap<String, String>      = new HashMap<String, String>();

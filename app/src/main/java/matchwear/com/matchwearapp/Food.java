@@ -9,9 +9,10 @@ import java.util.HashSet;
  */
 
 public class Food {
-public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
-public HashMap<String, HashMap> Brooklyn= new HashMap<String, HashMap>();
-public HashMap<String, HashMap> Southern_Comfort= new HashMap<String, HashMap>();
+    public HashMap<String, HashMap> American= new HashMap<String, HashMap>();
+    public HashMap<String, HashMap> Brooklyn= new HashMap<String, HashMap>();
+    public HashMap<String, HashMap> Southern_Comfort= new HashMap<String, HashMap>();
+    public HashMap<String, HashMap> Hispanic= new HashMap<String, HashMap>();
     public Food() {
         HashMap<String, HashMap> AA     = new HashMap<String, HashMap>();
         HashMap<String, String>FMNCB    = new HashMap<String,String>();
@@ -280,14 +281,6 @@ public HashMap<String, HashMap> Southern_Comfort= new HashMap<String, HashMap>()
         PC.put("Price", "$34.99");
         PC.put("Servings", "10 pieces");
         PC.put("ID","SCD03");
-        /*
-        HashMap<String, String>      = new HashMap<String, String>();
-        .put("Title", "");
-        .put("Description", "");
-        .put("Price", "");
-        .put("Servings", "");
-        .put("ID","");
-         */
 
 
         SCA.put("Cripsy Fried Shrimp", CFS);
@@ -307,8 +300,39 @@ public HashMap<String, HashMap> Southern_Comfort= new HashMap<String, HashMap>()
         SCD.put("Peach Cobbler",PC);
         Southern_Comfort.put("Desserts",SCD);
 
+        HashMap<String, HashMap>HA     = new HashMap<String, HashMap>();
+        HashMap<String, String>VT      = new HashMap<String, String>();
+        VT.put("Title", "Vegan Tostones");
+        VT.put("Description", "Fried savory plantains sprinkled with salt and served with a garlic and oil dipping sauce");
+        VT.put("Price", "$29.99 ");
+        VT.put("Servings", "20 pieces");
+        VT.put("ID","HPA01");
+        HashMap<String, String>SDM      = new HashMap<String, String>();
+        SDM.put("Title", "Sorullitos de Maiz");
+        SDM.put("Description", "Hush Puppies with a crunchy outer crust and a creamy buttery center");
+        SDM.put("Price", "$29.99 ");
+        SDM.put("Servings", "20 pieces");
+        SDM.put("ID","HPA02");
+        HashMap<String, String>S     = new HashMap<String, String>();
+        S.put("Title", "Sancocho");
+        S.put("Description", "Beef stew simmered with corn, potatoes, cilantro and onions");
+        S.put("Price", "$39.99 ");
+        S.put("Servings", "1 large bowl");
+        S.put("ID","HPA03");
+        HashMap<String, HashMap>HE   = new HashMap<String, HashMap>();
 
 
-
+        /*
+        HashMap<String, String>      = new HashMap<String, String>();
+        .put("Title", "");
+        .put("Description", "");
+        .put("Price", "");
+        .put("Servings", "");
+        .put("ID","");
+         */
+        HA.put("Vegan Tostones",VT);
+        HA.put("Sorullitos de Maiz",SDM);
+        HA.put("Sancocho",S);
+        Hispanic.put()
     }
 }

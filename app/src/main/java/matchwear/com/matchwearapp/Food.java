@@ -559,6 +559,8 @@ public class Food {
         .put("Servings", "");
         .put("ID","");
          */
-
+        HA.put("Vegan Tostones",VT);
+        HA.put("Sorullitos de Maiz",SDM);
+        HA.put("Sancocho",S);
     }
 }

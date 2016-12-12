@@ -17,6 +17,7 @@ public class Food {
     public HashMap<String, HashMap> Europe  = new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Middle_east= new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Asia    = new HashMap<String, HashMap>();
+    public HashMap<String, HashMap> Africa  = new HashMap<String, HashMap>();
 
     public Food() {
         HashMap<String, HashMap> AA     = new HashMap<String, HashMap>();
@@ -802,6 +803,74 @@ public class Food {
         ASID.put("Chocolate Mochi",CMO);
         ASID.put("Chestnut Cookies",CCO);
         Asia.put("Desserts",ASID);
+
+        HashMap<String, HashMap>AFA =new HashMap<String, HashMap>();
+        HashMap<String, String>PSO      = new HashMap<String, String>();
+        PSO.put("Title", "Pepper Soup");
+        PSO.put("Description", "Chicken broth with heavy cream, peppers, onion");
+        PSO.put("Price", "$49.99 ");
+        PSO.put("Servings", "5 bowls");
+        PSO.put("ID","AFA01");
+        HashMap<String, String>PPU      = new HashMap<String, String>();
+        PPU.put("Title", "Puff Puff");
+        PPU.put("Description", " dough containing flour, yeast, sugar, butter, salt, water and eggs and deep fried in vegetable oil");
+        PPU.put("Price", "$29.99 ");
+        PPU.put("Servings", "20 pieces");
+        PPU.put("ID","AFA02");
+        HashMap<String, HashMap>AFE = new HashMap<String, HashMap>();
+        HashMap<String, String>EWE      = new HashMap<String, String>();
+        EWE.put("Title", "Eba with egusi ");
+        EWE.put("Description", "Melon seeds, cut of cow meat (shaki), dry fish, seasoned with pepper and salt");
+        EWE.put("Price", "$59.99 ");
+        EWE.put("Servings", "1 large tray");
+        EWE.put("ID","AFE01");
+        HashMap<String, String>RFS      = new HashMap<String, String>();
+        RFS.put("Title", "Rice with fish and soup ");
+        RFS.put("Description", "Fish broth with chopped vegetables, soy sauce, vinegar");
+        RFS.put("Price", "$54.99 ");
+        RFS.put("Servings", "1 tray");
+        RFS.put("ID","AFE02");
+        HashMap<String, HashMap>AFSD    = new HashMap<String, HashMap>();
+        HashMap<String, String>MMO      = new HashMap<String, String>();
+        MMO.put("Title", "Mixed Meat and Okra");
+        MMO.put("Description", "Beef, chicken and turkey in a Liberian okra sauce.");
+        MMO.put("Price", "$40.99 ");
+        MMO.put("Servings", "1 tray ");
+        MMO.put("ID","AFS01");
+        HashMap<String, String>SY      = new HashMap<String, String>();
+        SY.put("Title", "Sweet Yams");
+        SY.put("Description", "Sweet Yams cut into pieces and fried until crispy and added with toppings");
+        SY.put("Price", "$29.99 ");
+        SY.put("Servings", "1 tray");
+        SY.put("ID","AFS02");
+        HashMap<String, HashMap>AFD  = new HashMap<String, HashMap>();
+        HashMap<String, String>ME      = new HashMap<String, String>();
+        ME.put("Title", "Melktert");
+        ME.put("Description", "Creamy milk tart in a pastry shell and topped with cinnamon");
+        ME.put("Price", "$44.99 ");
+        ME.put("Servings", "1 tray");
+        ME.put("ID","AFD01");
+        HashMap<String, String>KOE      = new HashMap<String, String>();
+        KOE.put("Title", "Koeksisters");
+        KOE.put("Description", "Braided fried dough served in a sweet syrup");
+        KOE.put("Price", "$49.99 ");
+        KOE.put("Servings", "20 pieces");
+        KOE.put("ID","AFD02");
+
+        AFA.put("Pepper Soup",PSO);
+        AFA.put("Puff Puff",PPU);
+        Africa.put("Appitizer",AFA);
+        AFE.put("Eba with egusi",EWE);
+        AFE.put("Rice with fish and soup",RFS);
+        Africa.put("Entrees",AFE);
+        AFSD.put("Mixed Meat and Okra",MMO);
+        AFSD.put("Sweet Yams",SY);
+        Africa.put("Side Dish",AFSD);
+        AFD.put("Melktert",ME);
+        AFD.put("Koeksisters",KOE);
+        Africa.put("Desserts",AFD);
+
+
 
 
 

@@ -18,6 +18,7 @@ public class Food {
     public HashMap<String, HashMap> Middle_east= new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Asia    = new HashMap<String, HashMap>();
     public HashMap<String, HashMap> Africa  = new HashMap<String, HashMap>();
+    public HashMap<String, HashMap> Drinks  = new HashMap<String, HashMap>();
 
     public Food() {
         HashMap<String, HashMap> AA     = new HashMap<String, HashMap>();
@@ -554,6 +555,7 @@ public class Food {
         ED.put("Macaroons",MA);
         Europe.put("Desserts",ED);
 
+
         HashMap<String, HashMap>MEA     = new HashMap<String, HashMap>();
         HashMap<String, String>VBGP      = new HashMap<String, String>();
         VBGP.put("Title", "Vegan Baba Ghanoush & Pita");
@@ -870,6 +872,74 @@ public class Food {
         AFD.put("Melktert",ME);
         AFD.put("Koeksisters",KOE);
         Africa.put("Desserts",AFD);
+
+        HashMap<String, String>COCO      = new HashMap<String, String>();
+        COCO.put("Title", "Coca Cola");
+        COCO.put("Price", "$6.50 ");
+        COCO.put("ID","BBB01");
+        HashMap<String, String>DC      = new HashMap<String, String>();
+        DC.put("Title", "Diet Coke");
+        DC.put("Price", "$6.50 ");
+        DC.put("ID","BBB02");
+        HashMap<String, String>SPR      = new HashMap<String, String>();
+        SPR.put("Title", "Sprite");
+        SPR.put("Price", "$6.50");
+        SPR.put("ID","BBB03");
+        HashMap<String, String>F      = new HashMap<String, String>();
+        F.put("Title", "Fanta");
+        F.put("Price", "$6.50 ");
+        F.put("ID","BBB04");
+        HashMap<String, String>RB      = new HashMap<String, String>();
+        RB.put("Title", "Root Beer");
+        RB.put("Price", "$6.50 ");
+        RB.put("ID","BBB05");
+        HashMap<String, String>FR      = new HashMap<String, String>();
+        FR.put("Title", "Fresca");
+        FR.put("Price", "$6.50 ");
+        FR.put("ID","BBB06");
+        HashMap<String, String>GA      = new HashMap<String, String>();
+        GA.put("Title", "Seagram's Ginger Ale");
+        GA.put("Price", "$6.50 ");
+        GA.put("ID","BBB07");
+        HashMap<String, String>HT      = new HashMap<String, String>();
+        HT.put("Title", "Honest Tea");
+        HT.put("Price", "$6.50 ");
+        HT.put("ID","BBB08");
+        HashMap<String, String>PO      = new HashMap<String, String>();
+        PO.put("Title", "Powerade");
+        PO.put("Price", "$7.00 ");
+        PO.put("ID","BBB09");
+        HashMap<String, String>BW      = new HashMap<String, String>();
+        BW.put("Title", "Bottled Water");
+        BW.put("Price", "$5.50 ");
+        BW.put("ID","BBB10");
+        HashMap<String, String>CJ      = new HashMap<String, String>();
+        CJ.put("Title", "Cranberry Juice");
+        CJ.put("Price", "$7.00 ");
+        CJ.put("ID","BBB11");
+        HashMap<String, String>SOJ      = new HashMap<String, String>();
+        SOJ.put("Title", "Simply Orange");
+        SOJ.put("Price", "$7.00 ");
+        SOJ.put("ID","BBB12");
+        HashMap<String, String>AJ      = new HashMap<String, String>();
+        AJ.put("Title", "Apple Juice");
+        AJ.put("Price", "$7.00 ");
+        AJ.put("ID","BBB13");
+
+        Drinks.put("Coca Cola", COCO);
+        Drinks.put("Diet Coke",DC);
+        Drinks.put("Sprite",SPR);
+        Drinks.put("Fanta",F);
+        Drinks.put("Root Beer",RB);
+        Drinks.put("Fresca",FR);
+        Drinks.put("Seagram's Ginger Ale",GA);
+        Drinks.put("Honest Tea",HT);
+        Drinks.put("Powerade",PO);
+        Drinks.put("Bottled Water",BW);
+        Drinks.put("Cranberry Juice",CJ);
+        Drinks.put("Simply Orange",SOJ);
+        Drinks.put("Apple Juice",AJ);
+
 
 
 

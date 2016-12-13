@@ -400,7 +400,7 @@ public class Food {
         HD.put("Sopaipillas", SO);
         Hispanic.put("Desserts",HD);
 
-
+        //CARRIBEAN
         HashMap<String, HashMap>APp   = new HashMap<String, HashMap>();
         HashMap<String, String>  BP1  = new HashMap<String, String>();
         BP1.put("Title", "Beef Patties");
@@ -410,6 +410,7 @@ public class Food {
         BP1.put("ID","CBA01");
         APp.put("Beef Patties", BP1);
 
+        //EUROPE
         HashMap<String, HashMap>EA  = new HashMap<String, HashMap>();
         HashMap<String, String>MPRB      = new HashMap<String, String>();
         MPRB.put("Title", "Mini Prosciutto Rice Balls");
